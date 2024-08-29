@@ -29,7 +29,7 @@
             <a class="header__phone" href="tel:+74999228974"
               >+7 (499) 922-89-74</a
             >
-            <button class="button">заказать звонок</button>
+            <button data-modal="consultation" class="button">заказать звонок</button>
           </div>
         </header>
         <div class="promo__inner">
@@ -49,7 +49,7 @@
               <p class="promo__item-text-3">Ответим на все вопросы</p>
             </div>
           </div>
-          <button class="button button__main">заказать кОНСУЛЬТАЦИЮ</button>
+          <button data-modal="consultation" class="button button__main">заказать кОНСУЛЬТАЦИЮ</button>
           <div class="promo__link">
             или
             <a href="#">перейти в каталог</a>
@@ -608,6 +608,45 @@
         </div>
       </div>
     </footer>
+
+    <!-- Это модальное окно -->
+    <div class="overlay">
+      <div class="modal" id="consultation">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Просто заполните форму заявки</div>
+        <div class="modal__description">
+          и мы перезвоним вам в течении 10 минут
+        </div>
+        <form class="form" action="#">
+          <input name="name" required type="text" placeholder="Ваше имя" />
+          <input name="phone" required type="tel" placeholder="Ваш телефон" />
+          <input name="email" required type="email" placeholder="Ваш E-mail" />
+
+          <button class="button button__main">заказать кОНСУЛЬТАЦИЮ</button>
+        </form>
+      </div>
+
+      <div class="modal" id="order">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Ваш заказ:</div>
+        <div class="modal__description">Пульсометр Polar FT1</div>
+        <form class="form" action="#">
+          <input name="name" required type="text" placeholder="Ваше имя" />
+          <input name="phone" required type="tel" placeholder="Ваш телефон" />
+          <input name="email" required type="email" placeholder="Ваш E-mail" />
+
+          <button class="button button__main">Купить</button>
+        </form>
+      </div>
+
+      <div class="modal modal__mini" id="thanks">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+        <div class="modal__description">
+          Наш менеджер свяжется с вами в ближайшее время!
+        </div>
+      </div>
+    </div>
 
     <script
       type="text/javascript"
