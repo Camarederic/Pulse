@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -127,7 +128,7 @@
         </form>
       </div>
     </section>
-    <section class="carousel">
+    <div class="carousel">
       <div class="container">
         <div class="carousel__inner">
           <div>
@@ -141,7 +142,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <section class="catalog">
       <div class="container">
@@ -516,7 +517,11 @@
     <section class="feedback">
       <div class="container">
         <h2 class="title">отзывы клиентов</h2>
-        <div class="feedback__inner">
+        <div
+          class="feedback__inner animate__animated animate__fadeInUp wow"
+          data-wow-duration="2s"
+          data-wow-delay="1s"
+        >
           <div class="feedback__items">
             <img
               class="feedback__item-img"
@@ -587,7 +592,7 @@
     <footer class="footer">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.4252695342984!2d37.64491460334127!3d55.76848550389916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sca!4v1724870531139!5m2!1sru!2sca"
-        width="100%"
+        width="1920"
         height="630"
         style="border: 0"
         allowfullscreen=""
@@ -657,17 +662,12 @@
       <img src="icons/up.svg" alt="up" />
     </a>
 
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
