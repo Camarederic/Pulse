@@ -42,7 +42,7 @@ $(function () {
         $(".catalog-item__content")
           .eq(i)
           .toggleClass("catalog-item__content_active");
-        $(".catalog-item__list").eq(i).toogleClass("catalog-item__list_active");
+        $(".catalog-item__list").eq(i).toggleClass("catalog-item__list_active");
       });
     });
   }
@@ -118,4 +118,6 @@ $(function () {
     $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
     return false;
   });
+  /* Это скрипт для анимации */
+  new WOW().init();
 });
